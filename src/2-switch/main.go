@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-	os:= runtime.GOOS //obtiene el sistema operativo
+	// os:= runtime.GOOS //obtiene el sistema operativo
 
-	switch os {
+	switch os:= runtime.GOOS; os {
 		case "windows":
 			fmt.Println("Ejecutando en Windows")
 			break //!no es necesario ponerlo, pero si se pone, se sale del switch
